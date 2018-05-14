@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_animais"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="animaizinhos.android.com.animaizinhos.TelaAnimais"
+    android:background="#f5e9b9">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cao"
+        android:layout_marginTop="18dp"
+        android:id="@+id/imgCaoID"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leao"
+        android:layout_alignBottom="@+id/imgCaoID"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:id="@+id/imgLeaoID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/macaco"
+        android:layout_alignBottom="@+id/imgGatoID"
+        android:layout_alignRight="@+id/imgLeaoID"
+        android:layout_alignEnd="@+id/imgLeaoID"
+        android:id="@+id/imgMacacoID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gato"
+        android:id="@+id/imgGatoID"
+        android:layout_above="@+id/imgVacaID"
+        android:layout_alignLeft="@+id/imgCaoID"
+        android:layout_alignStart="@+id/imgCaoID"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ovelha"
+        android:id="@+id/imgOvelhaID"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imgGatoID"
+        android:layout_alignStart="@+id/imgGatoID" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vaca"
+        android:id="@+id/imgVacaID"
+        android:layout_alignBottom="@+id/imgOvelhaID"
+        android:layout_alignLeft="@+id/imgMacacoID"
+        android:layout_alignStart="@+id/imgMacacoID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/direito"
+        android:id="@+id/imageView8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
