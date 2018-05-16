@@ -8,41 +8,61 @@ import android.app.Activity;
 
 public class Animais extends Activity {
 
-    private String olhos;
-    private String cor;
-    private String ondeVive;
+    private String habitate;
+    private String viveMedia;
+    private String nomeCientifico;
+    private String alimetoCome;
+    private String tipo;
 
     public Animais(){
 
     }
 
-    public Animais(String olhos, String cor, String ondeVive) {
-        this.olhos = olhos;
-        this.cor = cor;
-        this.ondeVive = ondeVive;
+    public Animais(String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
+        this.habitate = habitate;
+        this.viveMedia = viveMedia;
+        this.nomeCientifico = nomeCientifico;
+        this.alimetoCome = alimetoCome;
+        this.tipo = tipo;
     }
 
-    public String getOlhos() {
-        return olhos;
+    public String getHabitate() {
+        return habitate;
     }
 
-    public void setOlhos(String olhos) {
-        this.olhos = olhos;
+    public void setHabitate(String habitate) {
+        this.habitate = habitate;
     }
 
-    public String getCor() {
-        return cor;
+    public String getViveMedia() {
+        return viveMedia;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setViveMedia(String viveMedia) {
+        this.viveMedia = viveMedia;
     }
 
-    public String getOndeVive() {
-        return ondeVive;
+    public String getNomeCientifico() {
+        return nomeCientifico;
     }
 
-    public void setOndeVive(String ondeVive) {
-        this.ondeVive = ondeVive;
+    public void setNomeCientifico(String nomeCientifico) {
+        this.nomeCientifico = nomeCientifico;
+    }
+
+    public String getAlimetoCome() {
+        return alimetoCome;
+    }
+
+    public void setAlimetoCome(String alimetoCome) {
+        this.alimetoCome = alimetoCome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

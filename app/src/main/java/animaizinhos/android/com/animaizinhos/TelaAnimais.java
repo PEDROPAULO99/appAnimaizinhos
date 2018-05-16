@@ -1,13 +1,14 @@
 package animaizinhos.android.com.animaizinhos;
 
 import android.animation.IntArrayEvaluator;
+import android.app.Activity;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class TelaAnimais extends Animais implements View.OnClickListener {
+public class TelaAnimais extends Activity implements View.OnClickListener {
 
     private ImageView cao;
     private ImageView leao;

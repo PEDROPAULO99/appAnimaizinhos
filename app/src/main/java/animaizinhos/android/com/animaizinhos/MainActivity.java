@@ -24,7 +24,9 @@ public class MainActivity extends Activity {
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TelaAnimais.class));
+                startActivity(new Intent(MainActivity.this, Home.class));
+
+
 
             }
         });
