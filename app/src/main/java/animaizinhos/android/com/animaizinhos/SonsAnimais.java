@@ -1,14 +1,12 @@
 package animaizinhos.android.com.animaizinhos;
 
-import android.animation.IntArrayEvaluator;
 import android.app.Activity;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class TelaAnimais extends Activity implements View.OnClickListener {
+public class SonsAnimais extends Activity implements View.OnClickListener {
 
     private ImageView cao;
     private ImageView leao;
@@ -47,32 +45,32 @@ public class TelaAnimais extends Activity implements View.OnClickListener {
         switch (v.getId()){
 
             case R.id.imgCaoID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.cao );
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.cao );
                 tocarSom();
                 break;
 
             case R.id.imgLeaoID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.leao );
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.leao );
                 tocarSom();
                 break;
 
             case R.id.imgGatoID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.gato );
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.gato );
                 tocarSom();
                 break;
 
             case R.id.imgMacacoID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.macaco );
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.macaco );
                 tocarSom();
                 break;
 
             case R.id.imgOvelhaID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.ovelha );
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.ovelha );
                 tocarSom();
                 break;
 
             case R.id.imgVacaID:
-                sons = MediaPlayer.create(TelaAnimais.this, R.raw.vaca);
+                sons = MediaPlayer.create(SonsAnimais.this, R.raw.vaca);
                 tocarSom();
                 break;
 
