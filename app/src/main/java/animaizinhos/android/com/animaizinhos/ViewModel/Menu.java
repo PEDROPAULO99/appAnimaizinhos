@@ -8,9 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import animaizinhos.android.com.animaizinhos.Model.Entity.DAO.SalvaAquivo;
 import animaizinhos.android.com.animaizinhos.R;
 
-public class Home extends Activity {
+public class Menu extends Activity {
 
     private TextView nome;
 
@@ -37,24 +38,28 @@ public class Home extends Activity {
 
         if(bundle != null){
            String nomeUsuario = bundle.getString("nome");
-            nome.setText(nomeUsuario);
+            //nome.setText(nomeUsuario);
         }
 
+        SharedPreferences sharedPreferences = getSharedPreferences(SalvaAquivo.ARQUIVO_PREFERENCES,0);
+        String pessoaName = sharedPreferences.getString("nome", null);
+        nome.setText("OLÀ " + pessoaName);
+
         //recupera arquivos
-        SharedPreferences sharedPreferences = getSharedPreferences(salvaAquivo.toString(),0);
-        if(sharedPreferences.contains("nome")){
-            String nomePessoa = sharedPreferences.getString("nome", "usuario não definido");
-            nome.setText(nomePessoa);
-        }else {
+        //SharedPreferences sharedPreferences = getSharedPreferences(salvaAquivo.toString(),0);
+        //if(sharedPreferences.contains("nome")){
+        //  String nomePessoa = sharedPreferences.getString("nome", "usuario não definido");
+        //  nome.setText(nomePessoa);
+        //}else {
    //         nome.setText("olá, Usuario nao definido");
-        }
+        //}
 
 
 
         sonsAnimais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Home.this, SonsAnimais.class));
+                startActivity(new Intent(Menu.this, SonsAnimais.class));
             }
         });
 

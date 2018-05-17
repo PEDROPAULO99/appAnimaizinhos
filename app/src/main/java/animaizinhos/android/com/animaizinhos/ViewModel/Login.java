@@ -9,9 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import animaizinhos.android.com.animaizinhos.Model.Entity.DAO.SalvaAquivo;
 import animaizinhos.android.com.animaizinhos.R;
 
-public class MainActivity extends Activity {
+public class Login extends Activity {
 
 
     private Button botao;
@@ -34,11 +35,13 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                SharedPreferences sharedPreferences = getSharedPreferences(salvaAquivo.toString(),0);
+
+                //inicio de arquivo para salvar dados no dispositivo
+                SharedPreferences sharedPreferences = getSharedPreferences(SalvaAquivo.ARQUIVO_PREFERENCES,0);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
 
                 if(nomeUsuario.getText().toString().equals("")){
-                    Toast.makeText(MainActivity.this, "Por favor,preencha o nome", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Por favor,preencha o nome", Toast.LENGTH_SHORT).show();
                 } else {
                     editor.putString("nome", nomeUsuario.getText().toString());
                     editor.commit();
@@ -47,15 +50,12 @@ public class MainActivity extends Activity {
 
 
                 // Criando uma intent para receber os valores da caixa nome e envialos pra outra tela.
-                Intent i = new Intent(MainActivity.this, Home.class);
+                Intent i = new Intent(Login.this, Menu.class);
                 i.putExtra("nome",nomeUsuario.getText().toString()); // putExtra com a chave recebe os dados do campo EditText.
                 startActivity(i);
             }
         });
 
-
     }
-
-
 
 }
