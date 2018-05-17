@@ -1,10 +1,12 @@
-package animaizinhos.android.com.animaizinhos;
+package animaizinhos.android.com.animaizinhos.ViewModel;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import animaizinhos.android.com.animaizinhos.R;
 
 public class SonsAnimais extends Activity implements View.OnClickListener {
 
@@ -20,7 +22,7 @@ public class SonsAnimais extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_animais);
+        setContentView(R.layout.activity_sons_animais);
 
         cao = (ImageView) findViewById(R.id.imgCaoID);
         leao = (ImageView) findViewById(R.id.imgLeaoID);

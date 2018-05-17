@@ -1,4 +1,4 @@
-package animaizinhos.android.com.animaizinhos;
+package animaizinhos.android.com.animaizinhos.Model.Entity;
 
 import android.app.Activity;
 
