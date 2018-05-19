@@ -1,4 +1,4 @@
-package animaizinhos.android.com.animaizinhos.ViewModel;
+package animaizinhos.android.com.animaizinhos.ViewModel.Activity;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package animaizinhos.android.com.animaizinhos.ViewModel;
+package animaizinhos.android.com.animaizinhos.ViewModel.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import animaizinhos.android.com.animaizinhos.Model.Entity.DAO.SalvaAquivo;
 import animaizinhos.android.com.animaizinhos.R;
+import animaizinhos.android.com.animaizinhos.ViewModel.SonsAnimais;
 
 public class Menu extends Activity {
 

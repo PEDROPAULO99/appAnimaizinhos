@@ -1,6 +1,5 @@
-package animaizinhos.android.com.animaizinhos.Model.Entity.DAO;
+package animaizinhos.android.com.animaizinhos.Model.DAO;
 
-import android.app.Activity;
 
 /**
  * Created by Samsung on 16/05/2018.

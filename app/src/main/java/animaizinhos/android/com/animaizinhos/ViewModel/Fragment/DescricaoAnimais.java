@@ -1,9 +1,12 @@
-package animaizinhos.android.com.animaizinhos.ViewModel;
+package animaizinhos.android.com.animaizinhos.ViewModel.Fragment;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DescricaoAnimais extends AppCompatActivity {
+import animaizinhos.android.com.animaizinhos.R;
+
+public class DescricaoAnimais extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

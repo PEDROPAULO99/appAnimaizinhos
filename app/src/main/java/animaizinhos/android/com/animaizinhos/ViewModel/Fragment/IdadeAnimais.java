@@ -1,13 +1,21 @@
-package animaizinhos.android.com.animaizinhos.ViewModel;
+package animaizinhos.android.com.animaizinhos.ViewModel.Fragment;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class IdadeAnimais extends AppCompatActivity {
+import animaizinhos.android.com.animaizinhos.R;
+
+public class IdadeAnimais extends Activity {
+
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_idade_animais);
+
+
+
     }
 }
