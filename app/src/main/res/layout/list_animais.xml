@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:id="@+id/habitateTxt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/habitateTxt"
+        android:layout_alignRight="@+id/habitateTxt"
+        android:layout_alignEnd="@+id/habitateTxt"
+        android:layout_marginTop="54dp"
+        android:id="@+id/viveMediaTxt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viveMediaTxt"
+        android:layout_alignRight="@+id/viveMediaTxt"
+        android:layout_alignEnd="@+id/viveMediaTxt"
+        android:layout_marginTop="61dp"
+        android:id="@+id/nomeCientTxt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeCientTxt"
+        android:layout_alignRight="@+id/nomeCientTxt"
+        android:layout_alignEnd="@+id/nomeCientTxt"
+        android:layout_marginTop="51dp"
+        android:id="@+id/alimenComTxt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alimenComTxt"
+        android:layout_alignLeft="@+id/alimenComTxt"
+        android:layout_alignStart="@+id/alimenComTxt"
+        android:layout_marginTop="47dp"
+        android:id="@+id/tipoTxt" />
+</RelativeLayout>

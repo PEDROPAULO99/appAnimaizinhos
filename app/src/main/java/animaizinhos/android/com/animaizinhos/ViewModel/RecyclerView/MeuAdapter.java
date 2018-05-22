@@ -20,15 +20,16 @@ public class MeuAdapter extends RecyclerView.Adapter {
     private List<Animais> animais;
     private Context context;
 
-    public MeuAdapter(List<Animais> animais){
+    public MeuAdapter(List<Animais> animais,Context context){
         this.animais = animais;
+        this.context = context;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.activity_descricao_animais, parent, false);
+                .inflate(R.layout.list_animais, parent, false);
         
         MeuViewHolder holder = new MeuViewHolder(view);
         return holder;
@@ -39,7 +40,7 @@ public class MeuAdapter extends RecyclerView.Adapter {
 
         MeuViewHolder holder = (MeuViewHolder) viewHolder;
 
-        Animais animais = animais.get(position);
+        Animais animais = this.animais.get(position);
 
         holder.habitate.setText(animais.getHabitate());
         holder.viveMedia.setText(animais.getViveMedia());

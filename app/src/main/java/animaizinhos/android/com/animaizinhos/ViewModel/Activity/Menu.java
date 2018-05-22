@@ -8,9 +8,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import animaizinhos.android.com.animaizinhos.Model.Entity.DAO.SalvaAquivo;
+import animaizinhos.android.com.animaizinhos.Model.DAO.SalvaAquivo;
 import animaizinhos.android.com.animaizinhos.R;
-import animaizinhos.android.com.animaizinhos.ViewModel.SonsAnimais;
+import animaizinhos.android.com.animaizinhos.ViewModel.Fragment.DescricaoAnimais;
+import animaizinhos.android.com.animaizinhos.ViewModel.Fragment.IdadeAnimais;
+import animaizinhos.android.com.animaizinhos.ViewModel.Fragment.SonsAnimais;
 
 public class Menu extends Activity {
 
@@ -30,6 +32,8 @@ public class Menu extends Activity {
 
         nome = (TextView) findViewById(R.id.nomeId);
         sonsAnimais = (ImageView) findViewById(R.id.img1Id);
+        idadeAnimais = (ImageView) findViewById(R.id.img2Id);
+        descricaoAnimais = (ImageView) findViewById(R.id.img3Id);
 
 
 
@@ -61,6 +65,20 @@ public class Menu extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Menu.this, SonsAnimais.class));
+            }
+        });
+
+        idadeAnimais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, IdadeAnimais.class));
+            }
+        });
+
+        descricaoAnimais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, DescricaoAnimais.class));
             }
         });
 

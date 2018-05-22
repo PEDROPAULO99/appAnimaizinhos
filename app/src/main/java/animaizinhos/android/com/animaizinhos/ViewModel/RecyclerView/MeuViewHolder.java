@@ -21,10 +21,10 @@ public class MeuViewHolder extends RecyclerView.ViewHolder {
 
     public MeuViewHolder(View view){
         super(view);
-        habitate = (TextView) view.findViewById(R.id.activity_descricao_animais);
-        viveMedia = (TextView) view.findViewById(R.id.activity_descricao_animais);
-        nomeCientifico = (TextView) view.findViewById(R.id.activity_descricao_animais);
-        alimetoCome = (TextView) view.findViewById(R.id.activity_descricao_animais);
-        tipo = (TextView) view.findViewById(R.id.activity_descricao_animais);
+        habitate = (TextView) view.findViewById(R.id.habitateTxt);
+        viveMedia = (TextView) view.findViewById(R.id.viveMediaTxt);
+        nomeCientifico = (TextView) view.findViewById(R.id.nomeCientTxt);
+        alimetoCome = (TextView) view.findViewById(R.id.alimenComTxt);
+        tipo = (TextView) view.findViewById(R.id.tipoTxt);
     }
 }

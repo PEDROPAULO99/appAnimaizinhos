@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#f5e9b9"
-    tools:context="animaizinhos.android.com.animaizinhos.Home">
+    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.Menu">
 
 
     <ImageView
@@ -20,6 +20,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageView3" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img1Id"
+        android:layout_toRightOf="@+id/img1Id"
+        android:layout_toEndOf="@+id/img1Id"
+        android:id="@+id/nomeId" />
 
     <ImageView
         android:layout_width="100dp"
@@ -55,7 +64,9 @@
         android:layout_height="100dp"
         android:src="@drawable/img4"
         android:layout_alignBottom="@+id/img3Id"
+        android:id="@+id/img4Id"
         android:layout_alignRight="@+id/img2Id"
-        android:layout_alignEnd="@+id/img2Id"
-        android:id="@+id/img4Id" />
+        android:layout_alignEnd="@+id/img2Id" />
+
+
 </RelativeLayout>

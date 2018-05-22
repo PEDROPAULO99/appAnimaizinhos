@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Animaizinhos</string>
+    <string name="title_activity_splach_screen">SplachScreenActivity</string>
 </resources>

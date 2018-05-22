@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="animaizinhos.android.com.animaizinhos.MainActivity"
+    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.Login"
     android:background="#f5e9b9">
 
     <ImageView
@@ -28,23 +28,57 @@
         android:text="Bem Vindo!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="31dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:id="@+id/textId"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:textColor="#35721b"
+        android:layout_below="@+id/imageView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#35721b" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Qual seu nome?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#35721b"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textId"
+        android:layout_alignLeft="@+id/caixaNomeId"
+        android:layout_alignStart="@+id/caixaNomeId"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/caixaNomeId"
+        android:layout_alignEnd="@+id/caixaNomeId" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/caixaNomeId"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/botaoId"
+        android:layout_alignStart="@+id/botaoId"
+        android:layout_marginTop="23dp"
+        android:layout_alignRight="@+id/botaoId"
+        android:layout_alignEnd="@+id/botaoId"
+        android:paddingLeft="15dp" />
 
     <Button
         android:text="Entrar"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/textId"
+        android:id="@+id/botaoId"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:id="@+id/botaoId" />
+        android:layout_marginBottom="64dp" />
+
+
+
+
 </RelativeLayout>

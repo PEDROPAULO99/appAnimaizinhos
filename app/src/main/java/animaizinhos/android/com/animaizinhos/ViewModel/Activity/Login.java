@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import animaizinhos.android.com.animaizinhos.Model.Entity.DAO.SalvaAquivo;
+import animaizinhos.android.com.animaizinhos.Model.DAO.SalvaAquivo;
 import animaizinhos.android.com.animaizinhos.R;
 
 public class Login extends Activity {
