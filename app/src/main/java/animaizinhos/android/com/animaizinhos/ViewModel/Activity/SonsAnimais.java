@@ -1,4 +1,4 @@
-package animaizinhos.android.com.animaizinhos.ViewModel.Fragment;
+package animaizinhos.android.com.animaizinhos.ViewModel.Activity;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
