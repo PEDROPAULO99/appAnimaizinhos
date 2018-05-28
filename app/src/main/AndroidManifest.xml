@@ -15,15 +15,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewModel.Fragment.SonsAnimais" />
+        <activity android:name=".ViewModel.Activity.SonsAnimais" />
         <activity android:name=".ViewModel.Activity.Menu" />
         <activity android:name=".ViewModel.Activity.Login" />
-        <activity android:name=".ViewModel.Fragment.IdadeAnimais" />
-        <activity android:name=".ViewModel.Fragment.DescricaoAnimais"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity android:name=".ViewModel.Activity.IdadeAnimais" />
+        <activity android:name=".ViewModel.Activity.DescricaoAnimais" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ViewModel.Activity.IdadeGato" />
+        <activity android:name=".ViewModel.Activity.IdadeCachorro" />
+        <activity android:name=".ViewModel.Activity.NomeInglesAnimais" />
+        <activity android:name=".ViewModel.Activity.Home"></activity>
     </application>
 
 </manifest>

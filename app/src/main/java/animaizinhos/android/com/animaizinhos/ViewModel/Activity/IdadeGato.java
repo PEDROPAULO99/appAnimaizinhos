@@ -1,13 +1,43 @@
 package animaizinhos.android.com.animaizinhos.ViewModel.Activity;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class IdadeGato extends AppCompatActivity {
+import animaizinhos.android.com.animaizinhos.R;
+
+public class IdadeGato extends Activity {
+    private EditText caixaTexto;
+    private Button botaoIdade;
+    private TextView resultadoIdade;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_idade_gato);
+
+        caixaTexto = (EditText) findViewById(R.id.caixaTextoGatoId);
+        botaoIdade = (Button) findViewById(R.id.botaoIdadeCachorroId);
+        resultadoIdade = (TextView) findViewById(R.id.resultadoCachorroId);
+
+        botaoIdade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String textoDigitado = caixaTexto.getText().toString();
+                if (textoDigitado.isEmpty() || Integer.parseInt(textoDigitado) >= 99 || Integer.parseInt(textoDigitado) <= 0){
+                    resultadoIdade.setText("Digite um número válido");
+
+                }else{
+                    int valorDigitado = Integer.parseInt(textoDigitado);
+                    int resultado = valorDigitado * 4;
+
+                    resultadoIdade.setText("Seu gato tem " + resultado + " de idade humana");
+                }
+            }
+        });
     }
 }

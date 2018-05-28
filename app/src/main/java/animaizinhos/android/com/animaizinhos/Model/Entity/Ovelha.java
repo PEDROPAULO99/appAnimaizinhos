@@ -5,4 +5,7 @@ package animaizinhos.android.com.animaizinhos.Model.Entity;
  */
 
 public class Ovelha extends Animais {
+    public Ovelha(String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
+        super(habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
+    }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_idade_animais"
     android:layout_width="match_parent"
@@ -8,9 +9,70 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Fragment.IdadeAnimais">
+    android:background="#90C695"
+    android:orientation="vertical"
+    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.IdadeAnimais">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="Descubra a idade do seu animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:weightSum="1">
 
 
 
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="left"
+            android:layout_weight="5.83">
+
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="160dp"
+                android:src="@drawable/cachorro"
+                android:id="@+id/cachorroId"
+                android:layout_marginTop="25dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+            <ImageView
+                android:layout_width="169dp"
+                android:layout_height="209dp"
+                android:src="@drawable/gaato"
+                android:id="@+id/gaatoId" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Fragment.SonsAnimais"
+    tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.SonsAnimais"
     android:background="#f5e9b9">
 
     <ImageView
