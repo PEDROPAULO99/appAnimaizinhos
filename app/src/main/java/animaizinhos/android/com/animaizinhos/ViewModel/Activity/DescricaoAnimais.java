@@ -36,12 +36,12 @@ public class DescricaoAnimais extends Activity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
 
         List<Animais> animais = new ArrayList<>();
-        animais.add(new Cao("latir","30","kayque","rafa","rafa moreira"));
-        animais.add(new Gato("miar","15","kteeste","tet","tta"));
-        animais.add(new Leao("miar","15","kteeste","tet","tta"));
-        animais.add(new Macaco("miar","15","kteeste","tet","tta"));
-        animais.add(new Ovelha("miar","15","kteeste","tet","tta"));
-        animais.add(new Vaca("miar","15","kteeste","tet","tta"));
+        animais.add(new Cao("Cachorro","Animal doméstico vive em casas","vive em media 15 anos","kayque","Come ração","Mamifero"));
+        animais.add(new Gato("Gato", "Animal doméstico vive em casas","vive em media 10 anos","kteeste","Come ração","Mamifero"));
+        animais.add(new Leao("Leão", "Animal Selvagem, vive na floresta","vive em media 30 anos","kteeste","Come carne","Carnivoro"));
+        animais.add(new Macaco("Macaco", "Animal Silvestre, vive na floresta","vive em media 15 anos","kteeste","Come frutas","Mamifero"));
+        animais.add(new Ovelha("Ovelha", "Animal Silvestre, vive nos pastos","vive em media 17 anos","kteeste","Come pasto","Mamifero"));
+        animais.add(new Vaca("Vaca", "Animal Silvestre, vive nos pastos","vive em media 19 anos","kteeste","Come pasto","Mamifero"));
 
         recyclerView.setAdapter(new MeuAdapter(animais,this));
 

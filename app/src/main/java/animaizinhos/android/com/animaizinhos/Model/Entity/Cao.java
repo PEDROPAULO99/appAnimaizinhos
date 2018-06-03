@@ -6,7 +6,7 @@ package animaizinhos.android.com.animaizinhos.Model.Entity;
 
 public class Cao extends Animais {
 
-    public Cao(String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
-        super(habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
+    public Cao(String nomeAnimal, String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
+        super(nomeAnimal, habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
     }
 }

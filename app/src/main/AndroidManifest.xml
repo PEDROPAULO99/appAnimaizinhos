@@ -31,7 +31,6 @@
         <activity android:name=".ViewModel.Activity.IdadeGato" />
         <activity android:name=".ViewModel.Activity.IdadeCachorro" />
         <activity android:name=".ViewModel.Activity.NomeInglesAnimais" />
-        <activity android:name=".ViewModel.Activity.Home"></activity>
     </application>
 
 </manifest>

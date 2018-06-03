@@ -1,55 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="400dp"
+    android:layout_margin="13dp"
+    android:background="#fff">
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/nomeAnimalTxt"
+        android:textSize="36sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:id="@+id/habitateTxt" />
+        android:layout_centerHorizontal="true" />
+
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/habitateTxt"
-        android:layout_alignRight="@+id/habitateTxt"
-        android:layout_alignEnd="@+id/habitateTxt"
-        android:layout_marginTop="54dp"
-        android:id="@+id/viveMediaTxt" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/viveMediaTxt"
-        android:layout_alignRight="@+id/viveMediaTxt"
-        android:layout_alignEnd="@+id/viveMediaTxt"
-        android:layout_marginTop="61dp"
-        android:id="@+id/nomeCientTxt" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nomeCientTxt"
-        android:layout_alignRight="@+id/nomeCientTxt"
-        android:layout_alignEnd="@+id/nomeCientTxt"
-        android:layout_marginTop="51dp"
-        android:id="@+id/alimenComTxt" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/alimenComTxt"
+        android:id="@+id/tipoTxt"
+        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/alimenComTxt"
         android:layout_alignStart="@+id/alimenComTxt"
-        android:layout_marginTop="47dp"
-        android:id="@+id/tipoTxt" />
+        android:layout_marginBottom="30dp"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeCientTxt"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/alimenComTxt"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alimenComTxt"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/tipoTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/habitateTxt"
+        android:gravity="center_vertical|fill_vertical|center_horizontal"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viveMediaTxt"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/nomeCientTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
 </RelativeLayout>

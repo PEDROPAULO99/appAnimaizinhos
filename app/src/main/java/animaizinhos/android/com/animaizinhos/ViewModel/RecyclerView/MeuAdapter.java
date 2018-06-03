@@ -42,6 +42,7 @@ public class MeuAdapter extends RecyclerView.Adapter {
 
         Animais animais = this.animais.get(position);
 
+        holder.nomeAnimal.setText(animais.getNomeAnimal());
         holder.habitate.setText(animais.getHabitate());
         holder.viveMedia.setText(animais.getViveMedia());
         holder.nomeCientifico.setText(animais.getNomeCientifico());

@@ -42,17 +42,18 @@ public class Login extends Activity {
 
                 if(nomeUsuario.getText().toString().equals("")){
                     Toast.makeText(Login.this, "Por favor,preencha o nome", Toast.LENGTH_SHORT).show();
+
                 } else {
                     editor.putString("nome", nomeUsuario.getText().toString());
                     editor.commit();
                     editor.apply();
+
+
+                    // Criando uma intent para receber os valores da caixa nome e envialos pra outra tela.
+                    Intent i = new Intent(Login.this, Menu.class);
+                    i.putExtra("nome",nomeUsuario.getText().toString()); // putExtra com a chave recebe os dados do campo EditText.
+                    startActivity(i);
                 }
-
-
-                // Criando uma intent para receber os valores da caixa nome e envialos pra outra tela.
-                Intent i = new Intent(Login.this, Menu.class);
-                i.putExtra("nome",nomeUsuario.getText().toString()); // putExtra com a chave recebe os dados do campo EditText.
-                startActivity(i);
             }
         });
 

@@ -2,6 +2,7 @@ package animaizinhos.android.com.animaizinhos.ViewModel.RecyclerView;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import animaizinhos.android.com.animaizinhos.R;
@@ -12,7 +13,7 @@ import animaizinhos.android.com.animaizinhos.R;
 
 public class MeuViewHolder extends RecyclerView.ViewHolder {
 
-
+    final TextView nomeAnimal;
     final TextView habitate;
     final TextView viveMedia;
     final TextView nomeCientifico;
@@ -21,6 +22,8 @@ public class MeuViewHolder extends RecyclerView.ViewHolder {
 
     public MeuViewHolder(View view){
         super(view);
+
+        nomeAnimal = (TextView) view.findViewById(R.id.nomeAnimalTxt);
         habitate = (TextView) view.findViewById(R.id.habitateTxt);
         viveMedia = (TextView) view.findViewById(R.id.viveMediaTxt);
         nomeCientifico = (TextView) view.findViewById(R.id.nomeCientTxt);

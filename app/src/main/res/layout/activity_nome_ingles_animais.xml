@@ -9,51 +9,62 @@
     <ViewFlipper
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/viewFlipper">
+        android:id="@+id/viewFlipper"
+        android:background="#FABE58">
+
+
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView3"
-            android:background="@drawable/bg_cachorro"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cao" />
+
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView4"
-            android:background="@drawable/bg_macaco"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/macaco"/>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView5"
-            android:src="@drawable/bg_vaca"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/vaca"/>
+
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView6"
-            android:src="@drawable/ovelha"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ovelha"/>
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView"
-            android:src="@drawable/leao"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/leao"/>
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/imageView2"
-            android:src="@drawable/gato"/>
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/gato"/>
 
     </ViewFlipper>
+
     <Button
         android:id="@+id/botaoProxId"
         android:layout_width="wrap_content"
@@ -64,6 +75,21 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textoNomeIglesAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste de teste"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/botaoProxId"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="117dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
 
 
 </RelativeLayout>

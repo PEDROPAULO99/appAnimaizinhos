@@ -5,7 +5,7 @@ package animaizinhos.android.com.animaizinhos.Model.Entity;
  */
 
 public class Vaca extends Animais {
-    public Vaca(String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
-        super(habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
+    public Vaca(String nomeAnimal, String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
+        super(nomeAnimal, habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
     }
 }

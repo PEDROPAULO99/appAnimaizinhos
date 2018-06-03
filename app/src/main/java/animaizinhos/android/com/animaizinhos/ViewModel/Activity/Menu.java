@@ -33,10 +33,6 @@ public class Menu extends Activity {
         setContentView(R.layout.activity_menu);
 
         nome = (TextView) findViewById(R.id.nomeId);
-        //sonsAnimais = (ImageView) findViewById(R.id.card1Id);
-        //idadeAnimais = (ImageView) findViewById(R.id.card2Id);
-        //descricaoAnimais = (ImageView) findViewById(R.id.card3Id);
-        //nomeInglesAnimais = (ImageView) findViewById(R.id.card4Id);
 
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
 
@@ -55,14 +51,7 @@ public class Menu extends Activity {
         String pessoaName = sharedPreferences.getString("nome", null);
         nome.setText("OLÀ " + pessoaName.toUpperCase());
 
-        //recupera arquivos
-        //SharedPreferences sharedPreferences = getSharedPreferences(salvaAquivo.toString(),0);
-        //if(sharedPreferences.contains("nome")){
-        //  String nomePessoa = sharedPreferences.getString("nome", "usuario não definido");
-        //  nome.setText(nomePessoa);
-        //}else {
-        //         nome.setText("olá, Usuario nao definido");
-        //}
+
 
     }
 

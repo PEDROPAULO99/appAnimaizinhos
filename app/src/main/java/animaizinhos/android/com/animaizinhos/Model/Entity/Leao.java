@@ -5,7 +5,7 @@ package animaizinhos.android.com.animaizinhos.Model.Entity;
  */
 
 public class Leao extends Animais {
-    public Leao(String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
-        super(habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
+    public Leao(String nomeAnimal, String habitate, String viveMedia, String nomeCientifico, String alimetoCome, String tipo) {
+        super(nomeAnimal, habitate, viveMedia, nomeCientifico, alimetoCome, tipo);
     }
 }
