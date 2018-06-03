@@ -21,57 +21,20 @@
         android:id="@+id/imageView" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cao"
-        android:layout_marginTop="18dp"
-        android:id="@+id/imgCaoID"
-        android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/leao"
-        android:layout_alignBottom="@+id/imgCaoID"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
-        android:id="@+id/imgLeaoID" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/macaco"
-        android:layout_alignBottom="@+id/imgGatoID"
-        android:layout_alignRight="@+id/imgLeaoID"
-        android:layout_alignEnd="@+id/imgLeaoID"
-        android:id="@+id/imgMacacoID" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/gato"
-        android:id="@+id/imgGatoID"
-        android:layout_above="@+id/imgVacaID"
-        android:layout_alignLeft="@+id/imgCaoID"
-        android:layout_alignStart="@+id/imgCaoID"
-        android:layout_marginBottom="12dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ovelha"
-        android:id="@+id/imgOvelhaID"
-        android:layout_marginBottom="39dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/imgGatoID"
-        android:layout_alignStart="@+id/imgGatoID" />
+        android:id="@+id/imgLeaoID"
+        android:layout_alignTop="@+id/imgCaoID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/vaca"
         android:id="@+id/imgVacaID"
         android:layout_alignBottom="@+id/imgOvelhaID"
@@ -79,11 +42,43 @@
         android:layout_alignStart="@+id/imgMacacoID" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/direito"
-        android:id="@+id/imageView8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gato"
+        android:id="@+id/imgGatoID"
+        android:layout_alignTop="@+id/imgMacacoID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/cao"
+        android:layout_marginTop="28dp"
+        android:id="@+id/imgCaoID"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ovelha"
+        android:id="@+id/imgOvelhaID"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/macaco"
+        android:id="@+id/imgMacacoID"
+        android:layout_above="@+id/imgVacaID"
+        android:layout_alignLeft="@+id/imgLeaoID"
+        android:layout_alignStart="@+id/imgLeaoID"
+        android:layout_marginBottom="18dp" />
+
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import animaizinhos.android.com.animaizinhos.R;
 
@@ -49,30 +50,36 @@ public class SonsAnimais extends Activity implements View.OnClickListener {
             case R.id.imgCaoID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.cao );
                 tocarSom();
+                Toast.makeText(SonsAnimais.this, "Som do Cachorro", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.imgLeaoID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.leao );
+                Toast.makeText(SonsAnimais.this, "Som do Leão", Toast.LENGTH_SHORT).show();
                 tocarSom();
                 break;
 
             case R.id.imgGatoID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.gato );
+                Toast.makeText(SonsAnimais.this, "Som do Gato", Toast.LENGTH_SHORT).show();
                 tocarSom();
                 break;
 
             case R.id.imgMacacoID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.macaco );
+                Toast.makeText(SonsAnimais.this, "Som do Macaco", Toast.LENGTH_SHORT).show();
                 tocarSom();
                 break;
 
             case R.id.imgOvelhaID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.ovelha );
+                Toast.makeText(SonsAnimais.this, "Som da Ovelha", Toast.LENGTH_SHORT).show();
                 tocarSom();
                 break;
 
             case R.id.imgVacaID:
                 sons = MediaPlayer.create(SonsAnimais.this, R.raw.vaca);
+                Toast.makeText(SonsAnimais.this, "Som da Vaca", Toast.LENGTH_SHORT).show();
                 tocarSom();
                 break;
 

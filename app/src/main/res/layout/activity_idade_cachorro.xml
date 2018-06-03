@@ -8,18 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_cachorro"
     tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.IdadeCachorro">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cachorro"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="87dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true" />
 
     <TextView
         android:text="Digite a idade do seu cachorro para saber a idade em anos humanos"
@@ -29,23 +20,12 @@
         android:textAlignment="center"
         android:id="@+id/textView2"
         android:textColor="@android:color/white"
-        android:background="#7d595555"
-        android:layout_marginTop="145dp"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/resultadoCachorroId"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="168dp" />
 
-    <TextView
-        android:text="Resultado: "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:id="@+id/resultadoCachorroId"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="25dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+
 
     <EditText
         android:layout_width="200dp"
@@ -60,6 +40,8 @@
         android:layout_above="@+id/botaoIdadeCachorroId"
         android:layout_centerHorizontal="true" />
 
+
+
     <Button
         android:text="DESCOBRIR IDADE"
         android:layout_width="200dp"
@@ -67,7 +49,21 @@
         android:id="@+id/botaoIdadeCachorroId"
         android:background="#286b22"
         android:textColor="@android:color/white"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_centerHorizontal="true"/>
+        android:layout_above="@+id/resultadoCachorroId"
+        android:layout_alignLeft="@+id/caixaTextoCachorroId"
+        android:layout_alignStart="@+id/caixaTextoCachorroId"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:text="Resultado: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/resultadoCachorroId"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

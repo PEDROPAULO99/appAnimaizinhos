@@ -8,30 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_gato"
     tools:context="animaizinhos.android.com.animaizinhos.ViewModel.Activity.IdadeGato">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/gaato"
-        android:id="@+id/gaato"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="Digite a idade do seu gato para saber a idade em anos humanos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:id="@+id/textView2"
-        android:textColor="@android:color/white"
-        android:background="#7d595555"
-        android:layout_marginBottom="36dp"
-        android:layout_above="@+id/caixaTextoGatoId"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="200dp"
@@ -46,17 +25,6 @@
         android:layout_above="@+id/botaoIdadeCachorroId"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="DESCOBRIR IDADE"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:id="@+id/botaoIdadeCachorroId"
-        android:background="#286b22"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="48dp"
-        android:layout_above="@+id/resultadoCachorroId"
-        android:layout_centerHorizontal="true"/>
-
 
     <TextView
         android:text="Resultado: "
@@ -70,5 +38,30 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         />
+
+    <Button
+        android:text="DESCOBRIR IDADE"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/botaoIdadeCachorroId"
+        android:background="#286b22"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/resultadoCachorroId"
+        android:layout_alignLeft="@+id/caixaTextoGatoId"
+        android:layout_alignStart="@+id/caixaTextoGatoId" />
+
+    <TextView
+        android:text="Digite a idade do seu gato para saber a idade em anos humanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/caixaTextoGatoId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
