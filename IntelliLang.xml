@@ -5,10 +5,6 @@
     <option name="PATTERN_ANNOTATION" value="org.intellij.lang.annotations.Pattern" />
     <option name="SUBST_ANNOTATION" value="org.intellij.lang.annotations.Subst" />
     <option name="RESOLVE_REFERENCES" value="true" />
-    <injection language="XHTML" injector-id="xml">
-      <display-name>application/@icon</display-name>
-      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("icon")).withNamespace(string().equalTo("http://schemas.android.com/apk/res/android")).withParent(xmlTag().withLocalName(string().equalTo("application")))]]></place>
-    </injection>
     <injection language="AIDL" injector-id="xml">
       <display-name>manifest</display-name>
       <place><![CDATA[xmlTag().withLocalName(string().equalTo("manifest"))]]></place>
